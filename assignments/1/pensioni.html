@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it"></lang>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>INPS: Pensioni</title>
+</head>
+
+<body>
+    <header>
+		<div class="testa">
+		<a  href="./index.html">
+		<img src="./images/logo-inps.png" alt="Logo finto dell'INPS">
+		</a>
+	
+			<nav>
+				<a href="./index.html">Home</a>
+				<a href="./404.html">Servizi</a>
+				<a href="./pensioni.html">Pensioni</a>
+			</nav>
+			</div>
+	</header>
+
+
+    <h1>Pensioni</h1>
+    <h2>Istruzioni:</h2>
+    <p>Per richiedere la tua pensione di 248,73 euro, <span><i>semplicemente</i></span> fare click sul tasto sottostante.</p>
+
+
+    <div id="button-div"><a href="./500.html">
+    <button>Ottieni pensione</button>
+    </a></div>
+    
+
+    <!--Script 100% di ChatGPT-->
+    <script>
+	const btn = document.querySelector('#button-div button');
+	let timer;
+	
+	btn.addEventListener('mouseenter', () => {
+		timer = setTimeout(() => {
+			const x = Math.random() * (window.innerWidth - btn.offsetWidth);
+			const y = Math.random() * (window.innerHeight - btn.offsetHeight);
+			btn.style.position = 'fixed';
+			btn.style.left = `${x}px`;
+			btn.style.top = `${y}px`;
+		}, 140);
+	});
+	
+	btn.addEventListener('mouseleave', () => {
+		clearTimeout(timer);
+	});
+	</script>
+
+</body>
+
+<footer>
+    <a href="index.html">Torna alla pagina principale</a>
+</footer>
+
+</html>
