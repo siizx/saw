@@ -26,4 +26,6 @@ button {
     border-radius: 60%;
     width: 250px;
     height: auto;
+    border: 3px solid #406cce;
+    padding: 0px;
 }
