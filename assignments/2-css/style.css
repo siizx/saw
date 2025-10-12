@@ -18,25 +18,64 @@ img {
     width: 300px;
     height: 300px;
     border-radius: 3px;
-    position: fixed;    
-}
-
-#img-div {
-
+    position: relative;  
 }
 
 #gatto {
-    z-index: -1;
+    z-index: 0;
+    left: -270px;
     bottom: -30px;
     border: solid cyan;
 }
 
 #gatto:hover {
-    z-index: 1;
+    z-index: 2;
 }
 
 #donna {
+    z-index: 1;
     border: solid magenta;
+}
+
+#h1p2 {
+    padding-top: 30px;
+}
+
+#div-p2 {
+    padding-bottom: 40px;
+}
+
+#labirintite {
+    border-radius: 3px;
+    border: solid var(--azzurro);
+}
+
+@media (min-width: 390px){
+    #labirintite {
+        background-color: aquamarine;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: oblique;
+        font-size: x-small;
+        color:brown;
+    }
+}
+
+@media (min-width: 768px){
+    #labirintite {
+        background-color: rgb(127, 142, 255);
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-style: italic;
+        font-size: medium;
+    }
+}
+
+@media (min-width: 1366px){
+    #labirintite {
+        background-color: aliceblue;
+        font-family: Arial, Helvetica, sans-serif;
+        border: 0px;
+        color:black;
+    }
 }
 
 footer {
